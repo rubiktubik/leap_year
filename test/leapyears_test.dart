@@ -10,10 +10,14 @@ import 'package:tdd_flutter/schaltjahr/is_leap_jahr.dart';
 */
 void main() {
   test('TeilbarDurch400IstSchaltjahr', () {
-    check(isLeapJahr(2000)).isTrue();
+    check(isSchaltJahr(2000)).isTrue();
   });
 
   test('TeilbarDurch100AberNicht400IstKEINSchaltjahr', () {
-    check(isLeapJahr(1900)).isFalse();
+    check(isSchaltJahr(1900)).isFalse();
+  });
+
+  test('TeilbarDurch4AberNicht100IstSchaltjahr', () {
+    check(isSchaltJahr(2008)).isTrue();
   });
 }
