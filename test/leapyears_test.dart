@@ -8,7 +8,11 @@ import 'package:flutter_test/flutter_test.dart';
  - 2017 ist kein Schaltjahr
 */
 void main() {
-  test('isLeapYear', () {
-    check(true).isTrue();
+  test('TeilbarDurch400IstSchaltjahr', () {
+    check(isLeapJahr(2000)).isTrue();
   });
+}
+
+bool isLeapJahr(int i) {
+  throw Exception();
 }
