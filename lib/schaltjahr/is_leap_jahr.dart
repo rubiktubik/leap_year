@@ -1,4 +1,4 @@
-bool isSchaltJahr(int year) {
+bool isLeapYear(int year) {
   return (year.isDividable(4) && year.isNotDivable(100)) ||
       year.isDividable(400);
 }
